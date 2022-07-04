@@ -53,7 +53,7 @@ app.get("/product/:id", (req, res) => {
   );
 });
 
-app.use("/", (req, res) => {
+app.use((req, res) => {
   res.status(404);
   res.send("<h1>404</h1>");
 });
